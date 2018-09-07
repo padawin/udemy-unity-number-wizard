@@ -701,7 +701,7 @@ MonoBehaviour:
   m_text: 'Haha I knew he could not find your number!
 
 
-    Well done you for having put him back at his place'
+    Well done you for having put him back at his place.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e0e664271440dd46ba08dec6d3c7dfc, type: 2}
   m_sharedMaterial: {fileID: 21699323815063776, guid: 4e0e664271440dd46ba08dec6d3c7dfc,
@@ -770,7 +770,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 593079817}
-    characterCount: 94
+    characterCount: 95
     spriteCount: 0
     spaceCount: 20
     wordCount: 20

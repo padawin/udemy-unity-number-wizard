@@ -1246,6 +1246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rules: {fileID: 11400000, guid: 2956981e7d5d80949ac8e761515c4060, type: 2}
+  result: {fileID: 11400000, guid: 45f1fe7783b86d8419d88061794297c8, type: 2}
   sceneLoader: {fileID: 193189653}
   guessText: {fileID: 1041964419}
 --- !u!4 &1537223244
@@ -1529,8 +1530,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 193189653}
-        m_MethodName: loadNextScene
+      - m_Target: {fileID: 1537223243}
+        m_MethodName: clickFound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

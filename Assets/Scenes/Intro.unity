@@ -936,7 +936,7 @@ MonoBehaviour:
     And blow my rival''s mind....
 
     Think deeply, strongly about a number between :MIN: and :MAX: and I will attempt
-    to find it in less than 10 attempts.... Ready?
+    to find it in less than :ATTEMPTS: attempts.... Ready?
 
 
     Do you have a number in mind?'

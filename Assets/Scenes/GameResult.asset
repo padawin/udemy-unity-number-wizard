@@ -8,8 +8,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f76b6e4861fac994cbe6008a29982aa1, type: 3}
-  m_Name: Rules
+  m_Script: {fileID: 11500000, guid: f6cdd355a6f3e3844bd235c066101108, type: 3}
+  m_Name: GameResult
   m_EditorClassIdentifier: 
-  min: 0
-  max: 1000

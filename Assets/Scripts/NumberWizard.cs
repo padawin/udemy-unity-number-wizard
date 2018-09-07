@@ -4,6 +4,7 @@ using TMPro;
 
 public class NumberWizard : MonoBehaviour {
 	[SerializeField] Rules rules;
+	[SerializeField] GameResult result;
 	[SerializeField] SceneLoader sceneLoader;
 
 	[SerializeField] TextMeshProUGUI guessText;
@@ -21,11 +22,13 @@ public class NumberWizard : MonoBehaviour {
 	}
 
 	void _guess() {
-		guess = Random.Range(min, max + 1);
+		turn++;
 		if (turn > rules.getMaxTurns()) {
+			result.setResult(false);
 			sceneLoader.loadNextScene();
 		}
 		else {
+			guess = Random.Range(min, max + 1);
 			guessText.SetText(guess.ToString());
 		}
 	}
@@ -33,12 +36,15 @@ public class NumberWizard : MonoBehaviour {
 	public void clickGuessTooLow() {
 		min = Mathf.Min(max, guess + 1);
 		_guess();
-		turn++;
 	}
 
 	public void clickGuessTooHigh() {
 		max = Mathf.Max(min, guess - 1);
 		_guess();
-		turn++;
+	}
+
+	public void clickFound() {
+		result.setResult(true);
+		sceneLoader.loadNextScene();
 	}
 }

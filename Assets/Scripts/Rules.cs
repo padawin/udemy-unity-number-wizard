@@ -17,6 +17,6 @@ public class Rules : ScriptableObject {
 
 	public int getMaxTurns() {
 		int turns = Mathf.FloorToInt(Mathf.Log(max, 2));
-		return turns * 2;
+		return turns;
 	}
 }

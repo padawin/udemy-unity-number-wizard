@@ -10,6 +10,7 @@ public class Intro : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		introText.text = placeholderText
+			.Replace(":ATTEMPTS:", rules.getMaxTurns().ToString())
 			.Replace(":MIN:", rules.getMin().ToString())
 			.Replace(":MAX:", rules.getMax().ToString());
 	}

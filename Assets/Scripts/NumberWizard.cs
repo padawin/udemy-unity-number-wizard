@@ -1,9 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NumberWizard : MonoBehaviour {
 	[SerializeField] Rules rules;
 	[SerializeField] SceneLoader sceneLoader;
+
+	[SerializeField] TextMeshProUGUI guessText;
+
 	int turn = 0;
 	int? min = null;
 	int? max = null;
@@ -21,6 +25,9 @@ public class NumberWizard : MonoBehaviour {
 		turn++;
 		if (turn > rules.getMaxTurns()) {
 			sceneLoader.loadNextScene();
+		}
+		else {
+			guessText.SetText(guess.ToString());
 		}
 	}
 

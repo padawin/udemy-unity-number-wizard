@@ -22,7 +22,6 @@ public class NumberWizard : MonoBehaviour {
 
 	void _guess() {
 		guess = Random.Range(min, max + 1);
-		turn++;
 		if (turn > rules.getMaxTurns()) {
 			sceneLoader.loadNextScene();
 		}
@@ -32,12 +31,14 @@ public class NumberWizard : MonoBehaviour {
 	}
 
 	public void clickGuessTooLow() {
-		min = guess;
+		min = Mathf.Min(max, guess + 1);
 		_guess();
+		turn++;
 	}
 
 	public void clickGuessTooHigh() {
-		max = guess;
+		max = Mathf.Max(min, guess - 1);
 		_guess();
+		turn++;
 	}
 }

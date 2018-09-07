@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Rules
   m_EditorClassIdentifier: 
   min: 0
-  max: 1000
+  max: 10

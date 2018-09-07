@@ -9,9 +9,9 @@ public class NumberWizard : MonoBehaviour {
 	[SerializeField] TextMeshProUGUI guessText;
 
 	int turn = 0;
-	int? min = null;
-	int? max = null;
-	int? guess = null;
+	int min;
+	int max;
+	int guess;
 
 	// Use for initialization
 	void Start() {
@@ -21,7 +21,7 @@ public class NumberWizard : MonoBehaviour {
 	}
 
 	void _guess() {
-		guess = (max + min) / 2;
+		guess = Random.Range(min, max + 1);
 		turn++;
 		if (turn > rules.getMaxTurns()) {
 			sceneLoader.loadNextScene();

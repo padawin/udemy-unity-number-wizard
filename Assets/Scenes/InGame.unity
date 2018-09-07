@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 1041964420}
   - component: {fileID: 1041964419}
   m_Layer: 0
-  m_Name: TextMeshPro Text (1)
+  m_Name: GuessText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1245,8 +1245,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9068185bea4bb8a46a4a4bd0d53d714f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guessStr: 
   rules: {fileID: 11400000, guid: 2956981e7d5d80949ac8e761515c4060, type: 2}
+  sceneLoader: {fileID: 193189653}
+  guessText: {fileID: 1041964419}
 --- !u!4 &1537223244
 Transform:
   m_ObjectHideFlags: 0
